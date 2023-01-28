@@ -70,7 +70,7 @@ Action()
 	
 	random_filter();
 	
-	lr_start_transaction("TC_03_RandomFilter");
+	lr_start_transaction("TC_03_RandomFilterRoute");
 
 	web_url("routes_3", 
 		"URL=https://um.mos.ru/routes?{filter}", 
@@ -100,7 +100,7 @@ Action()
 		LAST);
 	
 	if (atoi(lr_eval_string("{route_count}")) == 0) {
-	lr_end_transaction("TC_03_RandomFilter", LR_AUTO);
+	lr_end_transaction("TC_03_RandomFilterRoute", LR_AUTO);
 	return 0;
 	}
 	
@@ -134,11 +134,11 @@ Action()
 		EXTRARES,  
 		LAST);
 
-	lr_end_transaction("TC_03_RandomFilter", LR_AUTO);
+	lr_end_transaction("TC_03_RandomFilterRoute", LR_AUTO);
 	
 	if (strcmp(lr_eval_string("{Audio}"),"Success") ==0 ) {
 	
-	lr_start_transaction("TC_04_Audio");
+	lr_start_transaction("TC_04_AudioRoute");
 	
 	web_url("Audio",
 		"URL=https://um.mos.ru{Audio}", 
@@ -151,7 +151,7 @@ Action()
 		EXTRARES,
 		LAST);
 	
-	lr_end_transaction("TC_04_Audio", LR_AUTO);
+	lr_end_transaction("TC_04_AudioRoute", LR_AUTO);
 	
 	}
 	

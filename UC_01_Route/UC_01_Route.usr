@@ -52,7 +52,7 @@ vuser_init=cci
 Action=cci
 vuser_end=cci
 [TransactionsOrder]
-Order="TC_01_MainPage__*delimiter*__TC_02_PageRoute__*delimiter*__TC_03_RandomFilter__*delimiter*__TC_04_Audio__*delimiter*__TC_05_TakeHouse"
+Order="TC_01_MainPage__*delimiter*__TC_02_PageRoute__*delimiter*__TC_03_RandomFilterRoute__*delimiter*__TC_04_AudioRoute__*delimiter*__TC_05_TakeHouse"
 [StateManagement]
 LastReplayStatus=1
 [ActiveReplay]
@@ -65,6 +65,6 @@ filter.c=
 [Transactions]
 TC_01_MainPage=
 TC_02_PageRoute=
-TC_03_RandomFilter=
-TC_04_Audio=
+TC_03_RandomFilterRoute=
+TC_04_AudioRoute=
 TC_05_TakeHouse=

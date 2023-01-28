@@ -6,15 +6,12 @@ typedef enum {false, true} bool;
 
 void random_filter() 
 {
-	int chunkRange = 1680097;
 	int rayonRoute;
 	int routeType;
 	int routesLength;
 	int multimedia;
-	int countRange = 0;
 	int randNumFiltr;
 	char randStrFiltr[30];
-	int leftRange;
 	char pahtFiltr[30] = "filters=";
 	char pathRoutesLength[30] = "routesLength=";
 	char categories[30] = "[categories]=";
@@ -22,10 +19,6 @@ void random_filter()
 	char lengthTo[30] = "[length][to]=";
 	char lengthFrom[30] = "[length][from]=";
 	char lengthToNum[30];
-	int rightRange;
-	int remainder;
-	bool complite1 = true;
-	bool complite2 = true;
 	
 	srand(time(NULL));
 	
