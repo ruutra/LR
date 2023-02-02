@@ -63,7 +63,8 @@ Action()
 		"RecContentType=text/html", 
 		"Referer={protocol}://{host}/", 
 		"Snapshot=t546.inf", 
-		"Mode=HTML", 
+		"Mode=HTML",
+		EXTRARES,		
 		LAST);
 	
 	lr_end_transaction("TC_02_PageRoute", LR_AUTO);
